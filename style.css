@@ -1,0 +1,72 @@
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #262626;
+}
+
+.container {
+  font-size: 80px;
+  width: 600px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container span {
+  font-size: 80px;
+  color: #484848;
+  animation: lighting 1200ms infinite ease;
+}
+
+@keyframes lighting {
+  0%,
+  85% {
+    color: #4b4b4b;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #fff200;
+    text-shadow: 0 0 5px #fff200, 0 0 50px #ff6c00;
+  }
+}
+
+.container span:nth-child(1) {
+  animation-delay: 150ms;
+}
+.container span:nth-child(2) {
+  animation-delay: 300ms;
+}
+.container span:nth-child(3) {
+  animation-delay: 450ms;
+}
+.container span:nth-child(4) {
+  animation-delay: 600ms;
+}
+.container span:nth-child(5) {
+  animation-delay: 750ms;
+}
+.container span:nth-child(6) {
+  animation-delay: 900ms;
+}
+.container span:nth-child(7) {
+  animation-delay: 1050ms;
+}
+.container span:nth-child(8) {
+  animation-delay: 1200ms;
+}
